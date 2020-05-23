@@ -12,24 +12,38 @@
   </head>
   <body>
     <main class="main-wrapper">
-      <div class="color-red__wrapper">
-        <label> (R) - Red</label>
-        <input type="range" id="red-range" min="0" max="250" value="0" />
-        <input type="text" disabled readonly />
-      </div>
-      <div class="color-green__wrapper">
-        <label> (G) - Green</label>
-        <input type="range" id="green-range" min="0" max="250" value="0" />
-        <input type="text" disabled readonly />
-      </div>
-      <div class="color-blue__wrapper">
-        <label> (B) - Blue</label>
-        <input type="range" id="blue-range" min="0" max="250" value="0" />
-        <input type="text" disabled readonly />
-      </div>
+      <section class="section-colors">
+        <div class="color-red__wrapper">
+          <label> (R) - Red</label>
+          <input type="range" id="red-range" min="0" max="250" value="0" />
+          <input type="text" disabled readonly />
+        </div>
+        <div class="color-green__wrapper">
+          <label> (G) - Green</label>
+          <input type="range" id="green-range" min="0" max="250" value="0" />
+          <input type="text" disabled readonly />
+        </div>
+        <div class="color-blue__wrapper">
+          <label> (B) - Blue</label>
+          <input type="range" id="blue-range" min="0" max="250" value="0" />
+          <input type="text" disabled readonly />
+        </div>
+      </section>
+
+      <div class="box-preview"></div>
+
+      <section class="section-output">
+        <input class="output-color" readonly />
+        <button class="output-button">
+          <span class="output-span" id=""></span>
+        </button>
+      </section>
     </main>
+
     <footer class="footer">
-      Made with <i class="fas fa-heart"></i> by Gi.
+      Made with <i class="fas fa-heart"></i> by {Gi Souza}
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
