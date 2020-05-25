@@ -1,0 +1,13 @@
+@import './settings/reset.css';
+@import './settings/base.css';
+
+@import './containers/header-container.css';
+@import './containers/main-container.css';
+@import './containers/section-colors.css';
+@import './containers/color-container.css';
+@import './containers/copy-container.css';
+@import './containers/footer.css';
+
+@import './elements/box-preview.css';
+@import './elements/button-copy.css';
+@import './elements/input-color.css';

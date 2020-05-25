@@ -1,0 +1,26 @@
+.color-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-container input {
+  margin: 5px 5px;
+}
+
+.color-container input:active,
+.color-container input::-moz-focus-outer {
+  border: 0;
+}
+
+.color-container:nth-child(1) {
+  color: rgb(245, 29, 29);
+}
+.color-container:nth-child(2) {
+  color: rgb(24, 138, 24);
+}
+.color-container:nth-child(3) {
+  color: rgb(46, 46, 241);
+}

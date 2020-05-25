@@ -3,45 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/da5281fdbd.js"
-      crossorigin="anonymous"
-    ></script>
     <title>RGB Preview</title>
   </head>
   <body>
-    <main class="main-wrapper">
-      <section class="section-colors">
-        <div class="color-red__wrapper">
-          <label> (R) - Red</label>
-          <input type="range" id="red-range" min="0" max="250" value="0" />
-          <input type="text" disabled readonly />
-        </div>
-        <div class="color-green__wrapper">
-          <label> (G) - Green</label>
-          <input type="range" id="green-range" min="0" max="250" value="0" />
-          <input type="text" disabled readonly />
-        </div>
-        <div class="color-blue__wrapper">
-          <label> (B) - Blue</label>
-          <input type="range" id="blue-range" min="0" max="250" value="0" />
-          <input type="text" disabled readonly />
-        </div>
-      </section>
+    <header class="header-container">
+      <h1>RGB Preview</h1>
+    </header>
 
+    <main class="main-container">
       <div class="box-preview"></div>
 
-      <section class="section-output">
-        <input class="output-color" readonly />
-        <button class="output-button">
-          <span class="output-span" id=""></span>
-        </button>
+      <section class="section-colors">
+        <div class="color-container">
+          <label> (R) </label>
+          <input type="range" id="red-range" min="0" max="255" value="0" />
+          <input
+            type="text"
+            class="input-color"
+            id="red-output"
+            disabled
+            readonly
+          />
+        </div>
+        <div class="color-container">
+          <label> (G) </label>
+          <input type="range" id="green-range" min="0" max="255" value="0" />
+          <input
+            type="text"
+            class="input-color"
+            id="green-output"
+            disabled
+            readonly
+          />
+        </div>
+        <div class="color-container">
+          <label> (B) </label>
+          <input type="range" id="blue-range" min="0" max="255" value="0" />
+          <input
+            type="text"
+            class="input-color"
+            id="blue-output"
+            disabled
+            readonly
+          />
+        </div>
       </section>
+
+      <div class="copy-container">
+        <input class="output-color" readonly />
+        <button class="button-copy">
+          <i class="tiny material-icons">content_copy</i>
+          <span class="span-copy">Copy to clipboard!</span>
+        </button>
+      </div>
     </main>
 
     <footer class="footer">
-      Made with <i class="fas fa-heart"></i> by {Gi Souza}
+      Made by {Gi Souza}
     </footer>
 
     <script src="app.js"></script>

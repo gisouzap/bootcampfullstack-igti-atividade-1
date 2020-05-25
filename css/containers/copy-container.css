@@ -1,0 +1,16 @@
+.copy-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-container input {
+  font-size: 1em;
+  position: absolute;
+  background-color: rgb(240, 226, 226);
+  height: 40px;
+  width: 160px;
+  border: none;
+  padding: 5px 10px;
+}
